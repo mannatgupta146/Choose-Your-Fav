@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mannat Gupta</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Create Your Poll</h1>
+    <div class="poll-creator">
+      <input id="newOption" type="text" placeholder="Enter an option" />
+      <button onclick="addOption()">Add Option</button>
+    </div>
+    <div id="optionList" class="option-list"></div>
+    <button id="createPollButton" onclick="createPoll()" disabled>Create Poll</button>
+
+    <div id="poll" class="poll-section" style="display: none;">
+      <h2>Choose Your Favorite...</h2>
+      <div class="options" id="pollOptions"></div>
+      <button onclick="submitVote()">Submit Vote</button>
+    </div>
+
+    <div id="result" class="result-section"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
